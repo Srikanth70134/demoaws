@@ -126,6 +126,16 @@ kubectl get nodes -o wide
 #first step in VM
 mkdir /home/tekumatla/.kude
 cp -r .kube/config /home/tekumatla/.kube
-chown -R tekumatla:tekumatla /home/tekumatla
+chown -R tekumatla:tekumatla /home/tekumatlaHost 192.168.0.212
+HostName 192.168.0.212
+User tekumatla
+ForwardAgent yes
+
+#Configre ssh host in vscode
+Host 192.168.0.212
+HostName 192.168.0.212
+User tekumatla
+ForwardAgent yes
+
 
 
